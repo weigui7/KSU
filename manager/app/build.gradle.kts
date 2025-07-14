@@ -23,7 +23,7 @@ apksign {
 }
 
 android {
-    namespace = "me.weishu.kernelsu"
+    namespace = "me.weigui.kernelsu"
 
     buildTypes {
         release {
@@ -90,6 +90,10 @@ android {
     androidResources {
         generateLocaleConfig = true
     }
+}
+
+ksp {
+    arg("compose-destinations.defaultTransitions", "none")
 }
 
 dependencies {
